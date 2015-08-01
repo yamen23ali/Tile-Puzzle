@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <RelativeLayout
+        android:id="@+id/puzzleContainer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="8"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="@color/transparent" >
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/originalImageContainer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="8"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/accPuzzleBoard"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ScrollView
+            android:id="@+id/verticalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="7"
+            android:background="@drawable/scroll_pieces_border">
+
+            <LinearLayout
+                android:id="@+id/firstRowScroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/infoBar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Time : 00:00:00"/>
+             <LinearLayout 
+                android:id="@+id/helpButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/aid_button">
+             </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    
+    
+    <LinearLayout
+        android:id="@+id/startButtonParent"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="9" >
+
+        <TextView
+            android:id="@+id/placeName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:textColor="@android:color/black"
+            android:gravity="center"/>
+        <LinearLayout
+                android:id="@+id/startPuzzleButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/start_ico">
+         </LinearLayout>
+         <TextView
+            android:id="@+id/imageCredits"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:textColor="@android:color/black"
+            android:gravity="bottom|center_horizontal"
+            android:text="Image Credits :"/>
+    </LinearLayout>
+
+</LinearLayout>

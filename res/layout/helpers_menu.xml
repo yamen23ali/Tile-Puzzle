@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:weightSum="3"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/main_back" >
+
+    <TextView 
+        android:id="@+id/menuTitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Helpers"
+        android:textColor="@color/Black"/>
+    
+    <LinearLayout
+        android:id="@+id/firstRow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/showOriginal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Show Image"
+            android:background="@drawable/helpers_menu_buttons" 
+            android:layout_marginLeft="5dp"
+    		android:layout_marginRight="5dp"
+    		android:layout_marginTop="5dp"
+    		android:layout_marginBottom="5dp"/>
+        
+
+        <Button
+            android:id="@+id/placePieces"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Place Pieces"
+            android:background="@drawable/helpers_menu_buttons"
+            android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+    		android:layout_marginTop="5dp"
+    		android:layout_marginBottom="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondRow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/resetWrongPieces"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Reset Wrong"
+            android:background="@drawable/helpers_menu_buttons"
+            android:layout_marginLeft="5dp"
+    		android:layout_marginRight="5dp"
+    		android:layout_marginTop="5dp"
+    		android:layout_marginBottom="5dp"
+          />
+        
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Pause"
+            android:background="@drawable/helpers_menu_buttons" 
+            android:layout_marginLeft="5dp"
+    		android:layout_marginRight="5dp"
+    		android:layout_marginTop="5dp"
+    		android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

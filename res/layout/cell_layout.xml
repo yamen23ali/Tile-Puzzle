@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/imageViewContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/chooseImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/choose_border" />
+        
+        <TextView android:id="@+id/chooseTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"/>
+	 	<RatingBar
+		        android:id="@+id/cellRatingBar"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:max="5"
+		        android:stepSize="0.01"
+		        android:isIndicator="true"
+	 			style="@style/puzzleRatingBar"/>
+	    <TextView 
+	            android:id="@+id/ratingTextView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="90%"
+            	android:textColor="@android:color/black"/>
+ 			
+    </LinearLayout>
+
+</LinearLayout>
